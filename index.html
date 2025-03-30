@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <title>鉅城娛樂 - 戰神塞特・豪華體驗</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  <meta name="description" content="鉅城娛樂 - 戰神塞特頂級遊戲體驗，立即領取首存1000送1000優惠，VIP專屬豪華禮遇">
+  <meta name="description" content="鉅城娛樂 - 頂級遊戲體驗">
   <meta name="theme-color" content="#000000">
   
   <!-- Meta Pixel Code -->
@@ -29,12 +29,11 @@
   </noscript>
   <!-- End Meta Pixel Code -->
 
-  <!-- 优化字体加载 -->
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-  
-  <!-- 只加载需要的Font Awesome图标 -->
+
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" rel="stylesheet">
   
@@ -85,7 +84,7 @@
       display: block;
     }
 
-    /* 背景与容器 */
+
     .container {
       position: relative;
       width: 100%;
@@ -94,7 +93,7 @@
       overflow: hidden;
     }
     
-    /* 优化性能的背景效果 */
+
     .bg-effect {
       position: fixed;
       top: 0;
@@ -117,31 +116,31 @@
       to { transform: translate(-40px, -40px); }
     }
 
-    /* 顶部导航 */
+
     .header {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      padding: 18px 24px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      z-index: 10;
-      background: rgba(0,0,0,0.8);
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      box-shadow: 0 2px 10px rgba(255, 215, 0, 0.2);
-      will-change: transform;
-      transition: transform 0.3s ease;
-    }
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  z-index: 10;
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(255, 215, 0, 0.2);
+  will-change: transform;
+  transition: transform 0.3s ease;
+}
     
     .header.hidden {
       transform: translateY(-100%);
     }
     
     .logo img {
-      height: 48px;
+      height: 96px;
       filter: drop-shadow(0 0 5px rgba(255, 215, 0, 0.5));
       transition: transform 0.3s ease;
     }
@@ -150,7 +149,7 @@
       transform: scale(1.05);
     }
 
-    /* 主要内容区 */
+
     .hero {
       position: relative;
       display: flex;
@@ -164,7 +163,7 @@
       gap: 20px;
     }
 
-    /* 角色图片区 */
+
     .character-container {
       position: relative;
       flex: 1 1 480px;
@@ -229,7 +228,7 @@
       opacity: 1;
     }
 
-    /* 文本内容区 */
+
     .text-content {
       flex: 1 1 400px;
       display: flex;
@@ -294,7 +293,7 @@
       box-shadow: 0 0 10px var(--primary-gold);
     }
     
-    /* 步骤指引 */
+
     .steps-container {
       display: flex;
       flex-direction: column;
@@ -325,7 +324,7 @@
       font-size: 1.05rem;
     }
 
-    /* CTA按钮 */
+
     .cta-container {
       display: flex;
       flex-direction: column;
@@ -390,7 +389,7 @@
       box-shadow: 0 8px 15px rgba(6, 199, 85, 0.4);
     }
     
-    /* 悬浮CTA按钮 */
+
     .floating-cta {
       position: fixed;
       bottom: 20px;
@@ -426,7 +425,7 @@
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(6, 199, 85, 0.6);
     }
 
-    /* 优惠区域 */
+
     .promo-section {
       width: 100%;
       padding: 80px 24px;
@@ -507,7 +506,7 @@
       transform: scale(1.08);
     }
     
-    /* 叠加文字 */
+ 
     .promo-image::after {
       content: "";
       position: absolute;
@@ -580,7 +579,7 @@
       box-shadow: 0 5px 15px rgba(184, 134, 11, 0.3);
     }
 
-    /* 安全保障区块 */
+
     .security-section {
       padding: 60px 24px;
       background: rgba(0,0,0,0.7);
@@ -636,7 +635,7 @@
       line-height: 1.4;
     }
 
-    /* 页脚 */
+
     .footer {
       background: rgba(0, 0, 0, 0.9);
       padding: 30px 20px;
@@ -685,7 +684,7 @@
       margin-top: 20px;
     }
 
-    /* 响应式设计优化 */
+
     @media (max-width: 1024px) {
       .game-title {
         font-size: 2.5rem;
@@ -773,7 +772,7 @@
     
     @media (max-width: 480px) {
       .logo img {
-        height: 36px;
+        height: 60px;
       }
       
       .game-title {
@@ -855,23 +854,23 @@
 </head>
 <body>
   <div class="container">
-    <!-- 简化背景效果 -->
+
     <div class="bg-effect"></div>
     
-    <!-- 顶部导航 -->
+
     <header class="header">
       <div class="logo">
         <img src="images/logo.png" alt="鉅城娛樂">
       </div>
     </header>
 
-    <!-- 悬浮CTA按钮 -->
+
     <a href="https://lin.ee/WQfGz0J" class="floating-cta" onclick="fbq('track', 'Lead');">
       <i class="fab fa-line line-icon"></i>
       加入LINE
     </a>
 
-    <!-- 主要区块 -->
+
     <section class="hero">
       <div class="character-container">
         <div class="character-frame">
@@ -882,24 +881,24 @@
 
       <div class="text-content">
         <h1 class="game-title">戰神塞特 極致體驗</h1>
-        <h2 class="subtitle">豪華盛宴・驚喜連連</h2>
+        <h2 class="subtitle">豪華盛宴・紅球連連</h2>
         
         <p class="promo-text">限時豪華專屬禮遇，千元好禮立即到手！</p>
         <p class="promo-details">VIP專屬優惠，名額有限，先到先得！</p>
         
-        <!-- 步骤指引 -->
+
         <div class="steps-container">
           <div class="step-item">
             <div class="step-number">1</div>
-            <div class="step-text">加入官方LINE好友</div>
+            <div class="step-text">加入官方LINE - 專屬美女小助手</div>
           </div>
           <div class="step-item">
             <div class="step-number">2</div>
-            <div class="step-text">完成註冊</div>
+            <div class="step-text">完成註冊 - 暢享極致遊戲體驗</div>
           </div>
           <div class="step-item">
             <div class="step-number">3</div>
-            <div class="step-text">立即領取</div>
+            <div class="step-text">立即領取 - 多重好禮</div>
           </div>
         </div>
         
@@ -912,64 +911,6 @@
       </div>
     </section>
 
-    <!-- 优惠区块 -->
-    <section class="promo-section">
-      <div class="section-header">
-        <h2 class="promo-title">尊享精選優惠</h2>
-      </div>
-      
-      <div class="promo-grid">
-        <!-- 优惠项目 1 -->
-        <div class="promo-item">
-          <div class="promo-image">
-            <img src="images/Snipaste_2025-03-30_22-10-27.jpg" alt="每日續儲一路發">
-            <div class="promo-tag">熱門</div>
-          </div>
-          <div class="promo-info">
-            <h3>每日續儲一路發</h3>
-            <p class="date">活動期間：2025-01-01 ~ 2030-12-31</p>
-            <p>日日送13%無上限，每日豪贈不停歇！</p>
-            <a href="https://lin.ee/WQfGz0J" class="promo-button" onclick="fbq('track', 'Lead');">
-              立即領取
-            </a>
-          </div>
-        </div>
-        
-        <!-- 优惠项目 2 -->
-        <div class="promo-item">
-          <div class="promo-image">
-            <img src="images/Snipaste_2025-03-30_22-10-01.jpg" alt="迎新豪禮 一倍水 1000送1000">
-            <div class="promo-tag">首存</div>
-          </div>
-          <div class="promo-info">
-            <h3>迎新豪禮 一倍水</h3>
-            <p class="date">活動期間：2024-07-20 ~ 2026-01-01</p>
-            <p>豪禮翻倍，尊享VIP待遇，限量名額搶先體驗！</p>
-            <a href="https://lin.ee/WQfGz0J" class="promo-button" onclick="fbq('track', 'Lead');">
-              立即領取
-            </a>
-          </div>
-        </div>
-        
-        <!-- 优惠项目 3 -->
-        <div class="promo-item">
-          <div class="promo-image">
-            <img src="images/Snipaste_2025-03-30_22-08-53.jpg" alt="VIP專屬回饋">
-            <div class="promo-tag">尊榮</div>
-          </div>
-          <div class="promo-info">
-            <h3>VIP專屬回饋計劃</h3>
-            <p class="date">活動期間：常年進行</p>
-            <p>尊貴VIP專屬回饋，等級越高禮遇越豪華，專人服務隨時待命！</p>
-            <a href="https://lin.ee/WQfGz0J" class="promo-button" onclick="fbq('track', 'Lead');">
-              了解詳情
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 页脚 -->
     <footer class="footer">
       <div class="footer-logo">
         <img src="images/logo.png" alt="鉅城娛樂">
@@ -979,10 +920,10 @@
     </footer>
   </div>
 
-  <!-- JavaScript 优化 -->
+
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // 页面滚动处理
+
       let lastScrollTop = 0;
       const header = document.querySelector('.header');
       const floatingCta = document.querySelector('.floating-cta');
