@@ -25,6 +25,7 @@
   /></noscript>
   <!-- End Meta Pixel Code -->
 
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -876,7 +877,7 @@
 
       <div class="text-content">
         <h1 class="game-title">戰神塞特 極致體驗</h1>
-        <h2 class="subtitle">豪華盛宴・驚喜連連</h2>
+        <h2 class="subtitle">豪華盛宴・紅球連連</h2>
         
         <p class="promo-text">限時豪華專屬禮遇，千元好禮立即到手！</p>
         <p class="promo-details">VIP專屬優惠，名額有限，先到先得！</p>
@@ -885,15 +886,15 @@
         <div class="steps-container">
           <div class="step-item">
             <div class="step-number">1</div>
-            <div class="step-text">加入官方LINE好友</div>
+            <div class="step-text">加入官方LINE - 專屬美女小助手</div>
           </div>
           <div class="step-item">
             <div class="step-number">2</div>
-            <div class="step-text">完成註冊</div>
+            <div class="step-text">完成註冊 - 暢享極致遊戲體驗</div>
           </div>
           <div class="step-item">
             <div class="step-number">3</div>
-            <div class="step-text">立即領取</div>
+            <div class="step-text">立即領取 - 多重好禮</div>
           </div>
         </div>
         
@@ -905,64 +906,6 @@
         </div>
       </div>
     </section>
-
-
-    <section class="promo-section">
-      <div class="section-header">
-        <h2 class="promo-title">尊享精選優惠</h2>
-      </div>
-      
-      <div class="promo-grid">
-        <!-- 优惠项目 1 -->
-        <div class="promo-item">
-          <div class="promo-image">
-            <img src="images/Snipaste_2025-03-30_22-10-27.jpg" alt="每日續儲一路發">
-            <div class="promo-tag">熱門</div>
-          </div>
-          <div class="promo-info">
-            <h3>每日續儲一路發</h3>
-            <p class="date">活動期間：2025-01-01 ~ 2030-12-31</p>
-            <p>日日送13%無上限，每日豪贈不停歇！</p>
-            <a href="https://lin.ee/WQfGz0J" class="promo-button" onclick="fbq('track', 'Lead');">
-              立即領取
-            </a>
-          </div>
-        </div>
-        
-        <!-- 优惠项目 2 -->
-        <div class="promo-item">
-          <div class="promo-image">
-            <img src="images/Snipaste_2025-03-30_22-10-01.jpg" alt="迎新豪禮 一倍水 1000送1000">
-            <div class="promo-tag">首存</div>
-          </div>
-          <div class="promo-info">
-            <h3>迎新豪禮 一倍水</h3>
-            <p class="date">活動期間：2024-07-20 ~ 2026-01-01</p>
-            <p>豪禮翻倍，尊享VIP待遇，限量名額搶先體驗！</p>
-            <a href="https://lin.ee/WQfGz0J" class="promo-button" onclick="fbq('track', 'Lead');">
-              立即領取
-            </a>
-          </div>
-        </div>
-        
-        <!-- 优惠项目 3 -->
-        <div class="promo-item">
-          <div class="promo-image">
-            <img src="images/Snipaste_2025-03-30_22-08-53.jpg" alt="VIP專屬回饋">
-            <div class="promo-tag">尊榮</div>
-          </div>
-          <div class="promo-info">
-            <h3>VIP專屬回饋計劃</h3>
-            <p class="date">活動期間：常年進行</p>
-            <p>尊貴VIP專屬回饋，等級越高禮遇越豪華，專人服務隨時待命！</p>
-            <a href="https://lin.ee/WQfGz0J" class="promo-button" onclick="fbq('track', 'Lead');">
-              了解詳情
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
 
     <footer class="footer">
       <div class="footer-logo">
@@ -984,7 +927,7 @@
       window.addEventListener('scroll', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
-        // 顶部导航栏隐藏/显示
+
         if (scrollTop > 100) {
           if (scrollTop > lastScrollTop) {
             header.classList.add('hidden');
@@ -995,7 +938,7 @@
           header.classList.remove('hidden');
         }
         
-        // 显示悬浮CTA按钮
+
         if (scrollTop > window.innerHeight * 0.5) {
           floatingCta.classList.add('visible');
         } else {
@@ -1005,13 +948,13 @@
         lastScrollTop = scrollTop;
       });
       
-      // 延迟加载
+
       const fontAwesome = document.createElement('link');
       fontAwesome.rel = 'stylesheet';
       fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css';
       document.head.appendChild(fontAwesome);
       
-      // 优化图片加载
+
       const images = document.querySelectorAll('img');
       images.forEach(img => {
         img.loading = 'lazy';
