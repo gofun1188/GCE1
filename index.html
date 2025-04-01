@@ -1,32 +1,14 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '524853043989985');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=524853043989985&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-  
   <meta charset="UTF-8">
   <title>鉅城娛樂 - 戰神塞特・豪華體驗</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="description" content="鉅城娛樂 - 頂級遊戲體驗">
   <meta name="theme-color" content="#000000">
   
-  <!-- Meta Pixel Code -->
-  <script>
+<!-- Meta Pixel Code -->
+<script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -35,16 +17,12 @@ src="https://www.facebook.com/tr?id=524853043989985&ev=PageView&noscript=1"
   t.src=v;s=b.getElementsByTagName(e)[0];
   s.parentNode.insertBefore(t,s)}(window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '540184255214977');
-  fbq('init', '1188372966201359');
+  fbq('init', '524853043989985');
   fbq('track', 'PageView');
   </script>
-  <noscript>
-    <img height="1" width="1" style="display:none" 
-         src="https://www.facebook.com/tr?id=540184255214977&ev=PageView&noscript=1"/>
-    <img height="1" width="1" style="display:none" 
-         src="https://www.facebook.com/tr?id=1188372966201359&ev=PageView&noscript=1"/>
-  </noscript>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=524853043989985&ev=PageView&noscript=1"
+  /></noscript>
   <!-- End Meta Pixel Code -->
 
 
@@ -949,7 +927,7 @@ src="https://www.facebook.com/tr?id=524853043989985&ev=PageView&noscript=1"
       window.addEventListener('scroll', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
-        // 顶部导航栏隐藏/显示
+
         if (scrollTop > 100) {
           if (scrollTop > lastScrollTop) {
             header.classList.add('hidden');
@@ -960,7 +938,7 @@ src="https://www.facebook.com/tr?id=524853043989985&ev=PageView&noscript=1"
           header.classList.remove('hidden');
         }
         
-        // 显示悬浮CTA按钮
+
         if (scrollTop > window.innerHeight * 0.5) {
           floatingCta.classList.add('visible');
         } else {
@@ -970,13 +948,13 @@ src="https://www.facebook.com/tr?id=524853043989985&ev=PageView&noscript=1"
         lastScrollTop = scrollTop;
       });
       
-      // 延迟加载
+
       const fontAwesome = document.createElement('link');
       fontAwesome.rel = 'stylesheet';
       fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css';
       document.head.appendChild(fontAwesome);
       
-      // 优化图片加载
+
       const images = document.querySelectorAll('img');
       images.forEach(img => {
         img.loading = 'lazy';
