@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-  <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -14,32 +13,26 @@
     fbq('init', '1206824170997361');
     fbq('track', 'PageView');
     
-
     function trackContactEvent() {
       fbq('track', 'Contact');
       console.log('Facebook Pixel: Contact event tracked');
-
       return true;
     }
   </script>
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1206824170997361&ev=PageView&noscript=1"
   /></noscript>
-  <!-- End Meta Pixel Code -->
   <meta charset="UTF-8">
   <title>鉅城娛樂 - 戰神塞特・豪華體驗</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="description" content="鉅城娛樂 - 頂級遊戲體驗">
   <meta name="theme-color" content="#000000">
-
   <meta property="og:title" content="鉅城娛樂 - 戰神塞特・豪華體驗" />
   <meta property="og:description" content="限時豪華專屬禮遇，千元好禮立即到手！VIP專屬優惠，名額有限。" />
   <meta property="og:type" content="website" />
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
-
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css" rel="stylesheet">
@@ -99,7 +92,6 @@
       background: transparent;
     }
 
-
     .container {
       position: relative;
       width: 100%;
@@ -108,7 +100,6 @@
       overflow: hidden;
     }
     
-
     .bg-effect {
       position: fixed;
       top: 0;
@@ -130,7 +121,6 @@
       from { transform: translate(0, 0); }
       to { transform: translate(-40px, -40px); }
     }
-
 
     .header {
       position: fixed;
@@ -164,7 +154,6 @@
       transform: scale(1.05);
     }
 
-
     .hero {
       position: relative;
       display: flex;
@@ -177,7 +166,6 @@
       align-items: center;
       gap: 20px;
     }
-
 
     .character-container {
       position: relative;
@@ -243,7 +231,6 @@
       opacity: 1;
     }
 
-
     .text-content {
       flex: 1 1 400px;
       display: flex;
@@ -308,7 +295,6 @@
       box-shadow: 0 0 10px var(--primary-gold);
     }
     
-
     .steps-container {
       display: flex;
       flex-direction: column;
@@ -338,7 +324,6 @@
       flex: 1;
       font-size: 1.05rem;
     }
-
 
     .cta-container {
       display: flex;
@@ -404,43 +389,6 @@
       box-shadow: 0 8px 15px rgba(6, 199, 85, 0.4);
     }
     
-
-    .floating-cta {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 100;
-      display: flex;
-      align-items: center;
-      background: var(--line-green);
-      color: var(--white);
-      font-weight: 700;
-      font-size: 1rem;
-      padding: 12px 20px 12px 50px;
-      border-radius: 50px;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3), 0 0 10px rgba(6, 199, 85, 0.5);
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.3s ease;
-      will-change: transform, opacity;
-    }
-    
-    .floating-cta.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    
-    .floating-cta .line-icon {
-      font-size: 22px;
-      left: 18px;
-    }
-    
-    .floating-cta:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4), 0 0 15px rgba(6, 199, 85, 0.6);
-    }
-
-
     .footer {
       background: rgba(0, 0, 0, 0.9);
       padding: 30px 20px;
@@ -462,7 +410,6 @@
       color: rgba(255, 255, 255, 0.4);
       margin-top: 20px;
     }
-
 
     @media (max-width: 1024px) {
       .game-title {
@@ -560,17 +507,6 @@
         font-size: 24px;
       }
       
-      .floating-cta {
-        padding: 10px 16px 10px 45px;
-        font-size: 0.9rem;
-        right: 15px;
-        bottom: 15px;
-      }
-      
-      .floating-cta .line-icon {
-        font-size: 20px;
-      }
-      
       .footer {
         padding: 25px 15px;
       }
@@ -579,7 +515,6 @@
 </head>
 <body>
   <div class="container">
-
     <div class="bg-effect"></div>
     
     <header class="header">
@@ -587,15 +522,6 @@
         <img src="images/logo.png" alt="鉅城娛樂">
       </div>
     </header>
-
-    <!-- 漂浮按鈕 - 使用HTML標準按鈕 -->
-    <button 
-      id="floating-contact-btn" 
-      class="floating-cta" 
-      onclick="trackContactEvent(); window.location.href='https://lin.ee/WQfGz0J';">
-      <i class="fab fa-line line-icon"></i>
-      加入LINE
-    </button>
 
     <section class="hero">
       <div class="character-container">
@@ -626,7 +552,6 @@
             <div class="step-text">立即領取 - 多重好禮</div>
           </div>
         </div>
-        
 
         <div class="cta-container">
           <button 
@@ -651,16 +576,12 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-
       let lastScrollTop = 0;
       const header = document.querySelector('.header');
-      const floatingCta = document.querySelector('.floating-cta');
       
-
       window.addEventListener('scroll', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
-
         if (scrollTop > 100) {
           if (scrollTop > lastScrollTop) {
             header.classList.add('hidden');
@@ -671,34 +592,17 @@
           header.classList.remove('hidden');
         }
         
-
-        if (scrollTop > window.innerHeight * 0.5) {
-          floatingCta.classList.add('visible');
-        } else {
-          floatingCta.classList.remove('visible');
-        }
-        
         lastScrollTop = scrollTop;
       });
       
-
       const images = document.querySelectorAll('img');
       images.forEach(img => {
         img.loading = 'lazy';
       });
       
-
       if (typeof fbq === 'function') {
         fbq('track', 'PageView');
       }
-      
-
-      const hiddenButton = document.createElement('button');
-      hiddenButton.id = 'contact-event-button';
-      hiddenButton.textContent = '聯繫';
-      hiddenButton.style.display = 'none';
-      hiddenButton.setAttribute('data-event', 'Contact');
-      document.body.appendChild(hiddenButton);
     });
   </script>
 </body>
