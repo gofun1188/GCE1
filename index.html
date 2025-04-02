@@ -13,6 +13,14 @@
     'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '1206824170997361');
     fbq('track', 'PageView');
+    
+
+    function trackContactEvent() {
+      fbq('track', 'Contact');
+      console.log('Facebook Pixel: Contact event tracked');
+
+      return true;
+    }
   </script>
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1206824170997361&ev=PageView&noscript=1"
@@ -23,6 +31,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta name="description" content="鉅城娛樂 - 頂級遊戲體驗">
   <meta name="theme-color" content="#000000">
+
+  <meta property="og:title" content="鉅城娛樂 - 戰神塞特・豪華體驗" />
+  <meta property="og:description" content="限時豪華專屬禮遇，千元好禮立即到手！VIP專屬優惠，名額有限。" />
+  <meta property="og:type" content="website" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,6 +89,14 @@
       max-width: 100%;
       height: auto;
       display: block;
+    }
+
+    button {
+      cursor: pointer;
+      border: none;
+      outline: none;
+      appearance: none;
+      background: transparent;
     }
 
 
@@ -421,41 +441,6 @@
     }
 
 
-    .promo-section {
-      width: 100%;
-      padding: 80px 24px;
-      z-index: 2;
-      background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.9));
-      border-top: 1px solid rgba(255, 215, 0, 0.3);
-      position: relative;
-    }
-    
-    .section-header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
-    
-    .promo-title {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: var(--primary-gold);
-      text-shadow: 0 0 15px rgba(255,215,0,0.6);
-      position: relative;
-      padding-bottom: 15px;
-      display: inline-block;
-    }
-    
-    .promo-title::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 80px;
-      height: 3px;
-      background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
-    }
-    
     .footer {
       background: rgba(0, 0, 0, 0.9);
       padding: 30px 20px;
@@ -485,9 +470,6 @@
       }
       .subtitle {
         font-size: 1.5rem;
-      }
-      .promo-title {
-        font-size: 2.2rem;
       }
     }
     
@@ -540,14 +522,6 @@
       .step-item {
         width: 100%;
         max-width: 320px;
-      }
-      
-      .promo-section {
-        padding: 50px 20px;
-      }
-      
-      .promo-title {
-        font-size: 2rem;
       }
     }
     
@@ -614,17 +588,14 @@
       </div>
     </header>
 
-    <!-- 漂浮按鈕 - 添加id和明確標示為聯繫按鈕 -->
-    <a 
-      href="https://lin.ee/WQfGz0J"
-      id="floating-contact" 
+    <!-- 漂浮按鈕 - 使用HTML標準按鈕 -->
+    <button 
+      id="floating-contact-btn" 
       class="floating-cta" 
-      data-event="Contact"
-      data-event-name="Contact"
-      role="button">
+      onclick="trackContactEvent(); window.location.href='https://lin.ee/WQfGz0J';">
       <i class="fab fa-line line-icon"></i>
       加入LINE
-    </a>
+    </button>
 
     <section class="hero">
       <div class="character-container">
@@ -656,18 +627,15 @@
           </div>
         </div>
         
-        <!-- 主要聯繫按鈕 - 添加id和明確標示為聯繫按鈕 -->
+
         <div class="cta-container">
-          <a 
-            href="https://lin.ee/WQfGz0J" 
-            id="main-contact" 
+          <button 
+            id="main-contact-btn" 
             class="cta-btn"
-            data-event="Contact" 
-            data-event-name="Contact"
-            role="button">
+            onclick="trackContactEvent(); window.location.href='https://lin.ee/WQfGz0J';">
             <i class="fab fa-line line-icon"></i>
             立即加入官方LINE
-          </a>
+          </button>
         </div>
       </div>
     </section>
@@ -683,16 +651,16 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // 初始化元素
+
       let lastScrollTop = 0;
       const header = document.querySelector('.header');
       const floatingCta = document.querySelector('.floating-cta');
       
-      // 滾動效果
+
       window.addEventListener('scroll', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
-        // 標頭隱藏/顯示邏輯
+
         if (scrollTop > 100) {
           if (scrollTop > lastScrollTop) {
             header.classList.add('hidden');
@@ -703,7 +671,7 @@
           header.classList.remove('hidden');
         }
         
-        // 漂浮按鈕顯示邏輯
+
         if (scrollTop > window.innerHeight * 0.5) {
           floatingCta.classList.add('visible');
         } else {
@@ -713,32 +681,24 @@
         lastScrollTop = scrollTop;
       });
       
-      // 為按鈕添加Facebook像素事件
-      const trackContactEvent = function(e) {
-        // 確保fbq函數存在
-        if (typeof fbq === 'function') {
-          fbq('track', 'Contact');
-          console.log('Facebook Pixel: Contact event tracked');
-        }
-      };
-      
-      // 設置主要聯繫按鈕的事件監聽
-      const mainContactBtn = document.getElementById('main-contact');
-      if (mainContactBtn) {
-        mainContactBtn.addEventListener('click', trackContactEvent);
-      }
-      
-      // 設置漂浮聯繫按鈕的事件監聽
-      const floatingContactBtn = document.getElementById('floating-contact');
-      if (floatingContactBtn) {
-        floatingContactBtn.addEventListener('click', trackContactEvent);
-      }
-      
-      // 確保字體圖示已加載
+
       const images = document.querySelectorAll('img');
       images.forEach(img => {
         img.loading = 'lazy';
       });
+      
+
+      if (typeof fbq === 'function') {
+        fbq('track', 'PageView');
+      }
+      
+
+      const hiddenButton = document.createElement('button');
+      hiddenButton.id = 'contact-event-button';
+      hiddenButton.textContent = '聯繫';
+      hiddenButton.style.display = 'none';
+      hiddenButton.setAttribute('data-event', 'Contact');
+      document.body.appendChild(hiddenButton);
     });
   </script>
 </body>
