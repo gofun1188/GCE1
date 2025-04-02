@@ -2,17 +2,17 @@
 <html lang="zh-TW">
 <head>
   <!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '1206824170997361');
-  fbq('track', 'PageView');
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1206824170997361');
+    fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=1206824170997361&ev=PageView&noscript=1"
@@ -24,13 +24,13 @@
   <meta name="description" content="鉅城娛樂 - 頂級遊戲體驗">
   <meta name="theme-color" content="#000000">
 
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
 
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/brands.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css" rel="stylesheet">
   
   <style>
     :root {
@@ -113,22 +113,22 @@
 
 
     .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 18px 24px;
-  display: flex;
-  justify-content: center;  
-  align-items: center;
-  z-index: 10;
-  background: rgba(0,0,0,0.8);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 2px 10px rgba(255, 215, 0, 0.2);
-  will-change: transform;
-  transition: transform 0.3s ease;
-}
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 18px 24px;
+      display: flex;
+      justify-content: center;  
+      align-items: center;
+      z-index: 10;
+      background: rgba(0,0,0,0.8);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 2px 10px rgba(255, 215, 0, 0.2);
+      will-change: transform;
+      transition: transform 0.3s ease;
+    }
     
     .header.hidden {
       transform: translateY(-100%);
@@ -456,181 +456,6 @@
       background: linear-gradient(90deg, transparent, var(--primary-gold), transparent);
     }
     
-    .promo-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
-    
-    .promo-item {
-      width: 330px;
-      border: 2px solid rgba(255,215,0,0.4);
-      border-radius: 16px;
-      overflow: hidden;
-      background: rgba(0,0,0,0.6);
-      box-shadow: 0 10px 30px rgba(0,0,0,0.3), 0 0 20px rgba(255,215,0,0.2);
-      transition: all 0.4s ease;
-      will-change: transform, box-shadow;
-    }
-    
-    .promo-item:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4), 0 0 30px rgba(255,215,0,0.3);
-      border-color: rgba(255,215,0,0.8);
-    }
-    
-    .promo-image {
-      position: relative;
-      width: 100%;
-      height: 180px;
-      overflow: hidden;
-    }
-    
-    .promo-image img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.5s ease;
-      will-change: transform;
-    }
-    
-    .promo-item:hover .promo-image img {
-      transform: scale(1.08);
-    }
-    
- 
-    .promo-image::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 50%;
-      background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
-      z-index: 1;
-    }
-    
-    .promo-tag {
-      position: absolute;
-      top: 12px;
-      right: 12px;
-      background: var(--primary-gold);
-      color: var(--black);
-      font-size: 0.85rem;
-      font-weight: 700;
-      padding: 4px 12px;
-      border-radius: 30px;
-      z-index: 2;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
-    }
-    
-    .promo-info {
-      padding: 20px;
-    }
-    
-    .promo-info h3 {
-      font-size: 1.4rem;
-      margin-bottom: 10px;
-      color: var(--primary-gold);
-      font-weight: 700;
-    }
-    
-    .promo-info .date {
-      font-size: 0.9rem;
-      color: rgba(255, 255, 255, 0.7);
-      border-left: 3px solid var(--dark-gold);
-      padding-left: 10px;
-      margin-bottom: 12px;
-      line-height: 1.4;
-    }
-    
-    .promo-info p {
-      font-size: 1rem;
-      line-height: 1.6;
-      color: var(--white);
-      margin-bottom: 15px;
-    }
-    
-    .promo-button {
-      display: inline-block;
-      width: 100%;
-      text-align: center;
-      background: rgba(255, 215, 0, 0.2);
-      color: var(--primary-gold);
-      padding: 10px 15px;
-      border-radius: 30px;
-      font-size: 1rem;
-      font-weight: 600;
-      border: 1px solid var(--primary-gold);
-      transition: all 0.3s ease;
-    }
-    
-    .promo-button:hover {
-      background: var(--primary-gold);
-      color: var(--black);
-      box-shadow: 0 5px 15px rgba(184, 134, 11, 0.3);
-    }
-
-
-    .security-section {
-      padding: 60px 24px;
-      background: rgba(0,0,0,0.7);
-      text-align: center;
-      border-top: 1px solid rgba(255,215,0,0.2);
-      border-bottom: 1px solid rgba(255,215,0,0.2);
-    }
-    
-    .security-section h2 {
-      font-size: 1.8rem;
-      color: var(--white);
-      margin-bottom: 20px;
-    }
-    
-    .security-features {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-      max-width: 800px;
-      margin: 0 auto;
-    }
-    
-    .security-feature {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 160px;
-    }
-    
-    .security-icon {
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(255,215,0,0.1);
-      border-radius: 50%;
-      margin-bottom: 12px;
-      font-size: 1.6rem;
-      color: var(--primary-gold);
-    }
-    
-    .security-title {
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 6px;
-    }
-    
-    .security-description {
-      font-size: 0.85rem;
-      color: rgba(255,255,255,0.7);
-      line-height: 1.4;
-    }
-
-
     .footer {
       background: rgba(0, 0, 0, 0.9);
       padding: 30px 20px;
@@ -645,32 +470,6 @@
       height: 40px;
       opacity: 0.8;
       margin: 0 auto;
-    }
-    
-    .footer-links {
-      margin: 15px 0;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    
-    .footer-links a {
-      color: rgba(255,255,255,0.6);
-      font-size: 0.9rem;
-      transition: color 0.3s ease;
-    }
-    
-    .footer-links a:hover {
-      color: var(--primary-gold);
-    }
-    
-    .footer-disclaimer {
-      max-width: 800px;
-      margin: 20px auto;
-      font-size: 0.8rem;
-      color: rgba(255,255,255,0.5);
-      line-height: 1.5;
     }
     
     .copyright {
@@ -750,19 +549,6 @@
       .promo-title {
         font-size: 2rem;
       }
-      
-      .promo-item {
-        width: 100%;
-        max-width: 350px;
-      }
-      
-      .security-features {
-        gap: 20px;
-      }
-      
-      .security-feature {
-        width: 140px;
-      }
     }
     
     @media (max-width: 480px) {
@@ -811,38 +597,8 @@
         font-size: 20px;
       }
       
-      .security-section {
-        padding: 40px 15px;
-      }
-      
-      .security-section h2 {
-        font-size: 1.5rem;
-      }
-      
-      .security-feature {
-        width: 120px;
-      }
-      
-      .security-icon {
-        width: 50px;
-        height: 50px;
-        font-size: 1.4rem;
-      }
-      
-      .security-title {
-        font-size: 0.9rem;
-      }
-      
-      .security-description {
-        font-size: 0.8rem;
-      }
-      
       .footer {
         padding: 25px 15px;
-      }
-      
-      .footer-disclaimer {
-        font-size: 0.75rem;
       }
     }
   </style>
@@ -852,19 +608,23 @@
 
     <div class="bg-effect"></div>
     
-
     <header class="header">
       <div class="logo">
         <img src="images/logo.png" alt="鉅城娛樂">
       </div>
     </header>
 
-
-    <a href="https://lin.ee/WQfGz0J" class="floating-cta" onclick="fbq('track', 'Lead');">
+    <!-- 漂浮按鈕 - 添加id和明確標示為聯繫按鈕 -->
+    <a 
+      href="https://lin.ee/WQfGz0J"
+      id="floating-contact" 
+      class="floating-cta" 
+      data-event="Contact"
+      data-event-name="Contact"
+      role="button">
       <i class="fab fa-line line-icon"></i>
       加入LINE
     </a>
-
 
     <section class="hero">
       <div class="character-container">
@@ -881,7 +641,6 @@
         <p class="promo-text">限時豪華專屬禮遇，千元好禮立即到手！</p>
         <p class="promo-details">VIP專屬優惠，名額有限，先到先得！</p>
         
-
         <div class="steps-container">
           <div class="step-item">
             <div class="step-number">1</div>
@@ -897,8 +656,15 @@
           </div>
         </div>
         
+        <!-- 主要聯繫按鈕 - 添加id和明確標示為聯繫按鈕 -->
         <div class="cta-container">
-          <a href="https://lin.ee/WQfGz0J" class="cta-btn" onclick="fbq('track', 'Lead');">
+          <a 
+            href="https://lin.ee/WQfGz0J" 
+            id="main-contact" 
+            class="cta-btn"
+            data-event="Contact" 
+            data-event-name="Contact"
+            role="button">
             <i class="fab fa-line line-icon"></i>
             立即加入官方LINE
           </a>
@@ -915,18 +681,18 @@
     </footer>
   </div>
 
-
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-
+      // 初始化元素
       let lastScrollTop = 0;
       const header = document.querySelector('.header');
       const floatingCta = document.querySelector('.floating-cta');
       
+      // 滾動效果
       window.addEventListener('scroll', function() {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
-
+        // 標頭隱藏/顯示邏輯
         if (scrollTop > 100) {
           if (scrollTop > lastScrollTop) {
             header.classList.add('hidden');
@@ -937,7 +703,7 @@
           header.classList.remove('hidden');
         }
         
-
+        // 漂浮按鈕顯示邏輯
         if (scrollTop > window.innerHeight * 0.5) {
           floatingCta.classList.add('visible');
         } else {
@@ -947,13 +713,28 @@
         lastScrollTop = scrollTop;
       });
       
-
-      const fontAwesome = document.createElement('link');
-      fontAwesome.rel = 'stylesheet';
-      fontAwesome.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/solid.min.css';
-      document.head.appendChild(fontAwesome);
+      // 為按鈕添加Facebook像素事件
+      const trackContactEvent = function(e) {
+        // 確保fbq函數存在
+        if (typeof fbq === 'function') {
+          fbq('track', 'Contact');
+          console.log('Facebook Pixel: Contact event tracked');
+        }
+      };
       
-
+      // 設置主要聯繫按鈕的事件監聽
+      const mainContactBtn = document.getElementById('main-contact');
+      if (mainContactBtn) {
+        mainContactBtn.addEventListener('click', trackContactEvent);
+      }
+      
+      // 設置漂浮聯繫按鈕的事件監聽
+      const floatingContactBtn = document.getElementById('floating-contact');
+      if (floatingContactBtn) {
+        floatingContactBtn.addEventListener('click', trackContactEvent);
+      }
+      
+      // 確保字體圖示已加載
       const images = document.querySelectorAll('img');
       images.forEach(img => {
         img.loading = 'lazy';
