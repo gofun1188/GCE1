@@ -14,14 +14,18 @@
     fbq('track', 'PageView');
     
     function trackContactEvent() {
-      fbq('track', 'Contact');
-      console.log('Facebook Pixel: Contact event tracked');
+      if (typeof fbq === 'function') {
+        fbq('track', 'Contact');
+        console.log('Facebook Pixel: Contact event tracked');
+      }
       return true;
     }
 
     function trackRegisterEvent() {
-      fbq('track', 'CompleteRegistration');
-      console.log('Facebook Pixel: Register event tracked');
+      if (typeof fbq === 'function') {
+        fbq('track', 'CompleteRegistration');
+        console.log('Facebook Pixel: Register event tracked');
+      }
       return true;
     }
   </script>
